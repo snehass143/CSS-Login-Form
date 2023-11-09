@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssq3</title>
+        <style type="text/css">
+            *{
+            box-sizing: border-box;
+          }
+          body{
+            overflow: hidden;
+            margin-left: 0px;
+            margin-right: 3px;
+            margin-top:0px;
+          }
+          .column-1{
+            float: left;
+            background-image: linear-gradient(to bottom, rgb(95, 75, 178), rgb(245, 230, 185));
+            width: 50%;
+            height: 800px;
+            top: 400px;
+          }
+          .column-2{
+            float:right;
+            background-color:rgb(255, 255, 255);
+            width: 50%;
+            height: 800px;
+            
+          }
+
+@media (width<800px)
+{
+    .column-1{
+        display: none;
+    }
+    .column-2{
+        float: left;
+        width: 100%;
+    }
+            form{
+                margin-top: 300px;
+                padding-right: 70px;
+                margin: 100px 10px;
+                width: 700px;
+                height: 400px;
+
+            }}
+
+          .group {
+      margin-bottom: 10px;
+    }
+    .group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight:bold;
+      font-size: larger;
+
+    }
+    .group input {
+      width: 80%;
+      max-width: 680px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 50px;
+    }
+    .group input[type="submit"] {
+      background-color: #d56e0e;
+      color: #fff;
+      cursor: pointer;
+      font-size: medium;
+      margin-top: 10px;
+    }
+    form{
+        padding-top: 90px;
+        padding-left: 150px;
+    }
+    .h{
+            color:rgb(231, 94, 31); 
+            font-size:xx-large;
+            font-weight: 600;
+           }
+        </style>
+      </head>
+      <body>
+        <div class="column-1">
+        </div>
+        <div class="column-2">
+            <form>
+                <div class="group">
+                    <h2 class="h">Login Form</h2>
+                  <label for="name">Email:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required><br>
+                </div>
+                <input type="checkbox" > <label>Remember Me</label><br>
+                <div class="group">
+                  <input type="submit" value="Login">
+                </div>
+              </form>
+        </div>
+      </body>
+</html>
